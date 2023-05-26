@@ -30,6 +30,8 @@ public class StudentExam {
 			if(selectNum  == 1) {
 				System.out.printf("학생 수>");
 				studentCnt = Integer.parseInt(scanner.nextLine());
+				
+				// 입력 받은 학생 수를 토대로 students 배열 초기화에 필요한 개수 선언
 				students = new Student[studentCnt];
 				continue;
 			} else if(selectNum  == 2) {
@@ -43,6 +45,8 @@ public class StudentExam {
 					int eng = Integer.parseInt(scanner.nextLine());
 					System.out.print("수학> ");
 					int math = Integer.parseInt(scanner.nextLine());
+					
+					// 반복문으로 입력 받은 값을 객체에 초기화 후 students 배열에 주소 저장
 					students[i] = new Student(name, kor, eng, math);
 					
 					// 추후 분석 사용에 대한 데이터 계산 선처리
