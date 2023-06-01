@@ -3,8 +3,6 @@ package practice0601;
 class Point {			// extends Object 는 생략 가능 
 	int x;
 	int y;
-	
-	
 }
 
 class Point3d extends Point {
@@ -13,7 +11,11 @@ class Point3d extends Point {
 	
 	// constructor
 	Point3d() {}		// 다른 생성자를 생성하였기에 기본 생성자도 추가 
-	Point3d(int a, int b, int c) {}
+	Point3d(int x, int y, int z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 	
 	// method
 	public String toString() {
